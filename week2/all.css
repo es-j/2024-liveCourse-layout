@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *:before, *:after{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	height: auto; 
+}
+a{
+	text-decoration: none;
+}
+a:hover, button:hover{
+	cursor: pointer;
+}
+
+body{
+	font-family: "Bruno Ace SC","sans-Serif";
+	font-size: 16px;
+	line-height: 1.5;
+}
+.container{
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.nav{
+    color: #D1D1D1;
+    background: #000000;
+}
+.nav .list{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.nav h4{
+	width: 306px;
+}
+.nav .link{
+	width: 196px;
+	text-align: right;
+}
+.nav h4 a{
+	color: #D1D1D1;
+}
+
+.header{
+    color: #FFFFFF;
+    background: #000000;
+}
+.header .content{
+    padding: 72px 0;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header .hello{
+	width: 636px;
+}
+.header h2{
+	font-size: 64px;
+}
+.header h1{
+	font-size: 128px;
+	color: #00FFA3;
+	text-align: right;
+}
+button{
+	background-color: #FFFFFF;
+	border: none;
+	border-radius: 32px;
+	font-family: "Bruno Ace SC";
+	font-size: 16px;
+	display: inline-block;
+	padding: 12px 24px;
+	display: flex;
+	align-items: center;
+}
+button img{
+	margin-left: 4px;
+}
+.header button{
+	margin-left: auto;
+}
+
+.intro{
+	color: #FFFFFF;
+	background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/background-img.png);
+	padding: 160px 0;
+}
+.intro .content{
+	display: flex;
+	justify-content: space-between;
+}
+.intro .intro-text{
+	width: 526px;
+}
+.intro h3{
+	font-size: 64px;
+	margin-bottom: 36px;
+}
+.intro p{
+	font-size: 24px;
+	margin-bottom: 32px;
+}
+.intro-text img{
+	margin-right: 16px;
+}
+.intro-photo{
+	display: flex;
+}
+.intro-photo .center{
+	margin: 0 24px;
+}
+
+.about .content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 160px 0;
+}
+.about .skills{
+	width: 636px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.about .skills li{
+	width: 306px;
+	padding: 16px;
+	border: 1px solid #E3E3E3;
+	box-shadow: 4px 4px 4px 0px #00000014;
+	margin-bottom: 24px;
+}
+.about .skills .number, .about .skills h4{
+	font-size: 20px;
+}
+.about .about-text{
+	width: 526px;
+	font-size: 24px;
+}
+.about h3{
+	font-size: 64px;
+	margin-bottom: 36px;
+}
+
+.contact{
+	background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+	color: #FFFFFF;
+}
+.contact .content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 96px 0;
+}
+.contact .text{
+	display: flex;
+}
+.contact h3{
+	font-size: 64px;
+	margin-right: 16px;
+}
+.contact .social img{
+	box-shadow: 4px 4px 8px 0px #00000014;
+}
+.contact .social img:hover{
+	box-shadow: 0px 0px 16px 3px #9094FFE5;
+}
+.contact .center{
+	margin: 0 20px;
+}
+
+.project .content{
+	padding: 160px 0;
+}
+.project h3{
+	font-size: 64px;
+	margin-left: 550px;
+	margin-bottom: 26px;
+}
+.project .left{
+	margin-right: 24px;
+}
+.project .project-detail{
+	display: flex;
+	justify-content: space-between;
+}
+.project .project-text p{
+	margin-bottom: 76px;
+}
+.project button{
+	background: #000000;
+	color: #FFFFFF;
+}
+.project .top-right button img{
+	margin-right: 0;
+}
+.project .top-right{
+	display: flex;
+	margin-bottom: 28px;
+}
+.project .top-right img{
+	margin-right: 24px;
+}
+.project .bottom-right{
+	display: flex;
+	justify-content: space-between;
+}
+.footer{
+	color: #FFFFFF;
+	background-color: #000000;
+	text-align: center;
+	padding: 40px 0;
+}
